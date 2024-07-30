@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: "tarif";
+    src: url("/Tarif-Dfonts.org/Tarif/Tarif-Bold.otf");
+}
+
+body{
+    background-image: url("/img/fundo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.texto{
+    display: flex;
+    margin-top: 16%;
+    margin-bottom: 9.3%;
+    margin-left: 33%;
+    width: 40%;
+   
+}
+
+
+h1{
+    color: white;
+    font-family: "tarif";
+    font-size: 700%;
+    
+    animation: moveLeft 1.5s ease-in-out;
+}
+
+.link{
+    display: flex;
+    margin-left: 45.6%;
+}
+
+a{
+    font-size: 350%;
+    text-decoration: none;
+    color: white;
+    animation: moveUp 1.5s ease-in-out;
+}
+
+@media (max-width: 1280px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: "tarif";
+        src: url("/Tarif-Dfonts.org/Tarif/Tarif-Bold.otf");
+    }
+    
+    body{
+        background-image: url("/img/fundo1280.png");
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    
+    .texto{
+        display: flex;
+        margin-top: 14%;
+        margin-bottom: 5%;
+        margin-left: 27%;
+        width: 40%;
+       
+    }
+    
+    
+    h1{
+        color: white;
+        font-family: "tarif";
+        font-size: 600%;
+        animation: moveLeft 1.5s ease-in-out;
+    }
+    
+    .link{
+        display: flex;
+        margin-left: 45%;
+    }
+    
+    a{
+        font-size: 270%;
+        text-decoration: none;
+        color: white;
+        animation: moveUp 1.5s ease-in-out;
+    }
+  }
+
+
